@@ -1,0 +1,734 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Справочник пользователя</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="Review.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="Review.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="header-content">
+                    <img id="IdIcon" src="images/icon.png" alt="" width="70" height="70"/>
+                    <a id="title-header">Справочник пользователя</a>
+                </div>
+            </div>
+            <div id="body">
+                <div id="body-content">
+                    <div id="content">
+                        <div id="content-content">
+                            <div class="Content-div">
+                                <div id="AboutProject" class='article div'>О проекте</div>
+                                <p class='absaz'>CalculatorPro - это проект, разработанный в виде калькулятора с большим количеством инструментов, да и таким, с которым можно пользоваться и без мыши с использованием комбинаций клавиш!</p>
+                                <p class='absaz'>Написан на языке C# с использованием Net framework. Он поддерживается на операционной системе Windows (10, 8, 7, xp).</p>
+                            </div>
+                            <div class="Content-div">
+                                <div id="StructProject" class='article div'>Структура программы</div>
+                                <p  class='absaz'>Программа состоит из инструментов, окна констант, журнала событий и настроек. Среди инструментов есть как и калькуляторы (обычный и инженерный), так и конвертеры (системыа счисления, конвертер чисел, система измерений и т.д). Также есть свое подобие языка программирования - язык математических запросов MathScript.</p>
+                                <div class='article'>
+                                    <img src='images/srceen1.jpg' alt='' width="500" height="" style='margin: 0 auto;'/>
+                                </div>
+                                <p class="absaz">
+                                    В программе предусмотрена работа с клавиатуры. Поэтому ниже будет представлена таблица, что задействуют клавиши (также будут и еще, но уже относительно каждой вкладки).
+                                </p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Открытие/закрытие панели вкладок</td>
+                                        <td>Esc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Открытие/закрытие журнала события</td>
+                                        <td>F1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Открытие/закрытие окна констант</td>
+                                        <td>F2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Перезагрузка приложения</td>
+                                        <td>F5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Открытие настроек</td>
+                                        <td>F6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сворачивание приложения</td>
+                                        <td>F11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Закрытие приложения</td>
+                                        <td>F12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Смена вкладок</td>
+                                        <td>Control+(↑,↓,0, 1, 2, 3, 4, 5, 6, 7, 8, 9)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="SimpleCalculator" class="article div">Обычный калькулятор</div>
+                                <div class="article"><img src="images/screen8.jpg" alt=""/></div>
+                                <p class="absaz">Обычный калькулятор - обычный инструмент со стандартным количеством функций в работе.</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод чисел</td>
+                                        <td>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавление операций</td>
+                                        <td>*, +, /, -</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавление деление от остатка</td>
+                                        <td>P</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавоение арифмитического корня</td>
+                                        <td>R</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавление квадрата</td>
+                                        <td>S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавление деления на единицу</td>
+                                        <td>D</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удаление последнего символа</td>
+                                        <td>Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удаление символов нижнего текстовой области</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удаление со всех текстовый областей</td>
+                                        <td>Alt+Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавление запятой</td>
+                                        <td>,</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Включение модуля</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Отправить запрос</td>
+                                        <td>Enter</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="EngineerCalculator" class="article div">Инженерный калькулятор</div>
+                                <div class="article"><img src="images/screen16.jpg" alt=""/></div>
+                                <p class="absaz">Инженерный калькулятор - это уже более функциональный инструмент, который понадобится тем, кто занимается научными расчетами.</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод чисел</td>
+                                        <td>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавление запятой</td>
+                                        <td>,</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавление операции</td>
+                                        <td>+, -, /, *</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавление деления от остатка</td>
+                                        <td>P</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Корень</td>
+                                        <td>R</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Кубический корень</td>
+                                        <td>Alt+R</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Квадрат</td>
+                                        <td>S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Куб</td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Выбор степени</td>
+                                        <td>Alt+S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить последний символ</td>
+                                        <td>Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Очистить 2-е текстовое поле</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Очистить все текстовые поля</td>
+                                        <td>Alt+Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Смена кнопок</td>
+                                        <td>Alt+V</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Деление на единицу</td>
+                                        <td>D</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Отправить запрос</td>
+                                        <td>Enter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Модуль</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Число Пи</td>
+                                        <td>Alt+P</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Синус</td>
+                                        <td>I</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Синус в минус первой степени</td>
+                                        <td>Alt+I</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Косинус</td>
+                                        <td>O</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Косинус в минус первой степени</td>
+                                        <td>Alt+O</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Тангенс</td>
+                                        <td>T</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Тангенс в минус первой степени</td>
+                                        <td>Alt+T</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Логарифм</td>
+                                        <td>L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Экспонент</td>
+                                        <td>E</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Натуральный логарифм</td>
+                                        <td>Alt+L</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Внутренняя скобка</td>
+                                        <td>Alt+9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Внешняя скобка</td>
+                                        <td>Alt+0</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="NumberSystem" class="article div">Система счислений</div>
+                                <div class='article'>
+                                    <img src='images/screen2.jpg' alt='' style='margin: 0 auto;'/>
+                                </div>
+                                <p class="absaz">Система счислений - это инструмент, позволяющий преобразовывать числа относительно их систем счислений. Особенностью его является возможность изменять числа с двоичных до тридцатишестиричных систем с учетом использования дробной части, которая тоже конвертируются.</p>
+                                <table border="0" class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод символов</td>
+                                        <td>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Отправка запроса</td>
+                                        <td>Enter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить последний символ</td>
+                                        <td>Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить все</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавить запятую</td>
+                                        <td>,</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сменить систему счисления первого текстового поля</td>
+                                        <td>Стрелки ↑, ↓</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сменить систему счисления второго текстового поля</td>
+                                        <td>Стрелки →, ←</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="ComputeNumSystem" class="article div">Вычисление СС</div>
+                                <div class="article"><img src="images/screen11.jpg"/></div>
+                                <p class="absaz">Вычисление Систем Счислений (С.С.) выполняет счисление чисел с разной системой. </p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Обработать запрос</td>
+                                        <td>Enter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод чисел для первой текстовой области</td>
+                                        <td>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Смена системы счисления для 1-ой текстовой области</td>
+                                        <td>Стрелки ↑, ↓</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод чисел для первой текстовой области</td>
+                                        <td>Alt + (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Смена системы счисления для 1-ой текстовой области</td>
+                                        <td>Alt + (Стрелки ↑, ↓)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Выбор операции</td>
+                                        <td>+, -, *, /</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Смена системы счисления для ответа</td>
+                                        <td>Page(Up/Down)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить последний символ в 1-ом текстовом поле</td>
+                                        <td>Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить последний символ в 2-ом текстовом поле</td>
+                                        <td>Alt+Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить все в 1-ом текстовом поле</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить все в 2-ом текстовом поле</td>
+                                        <td>Alt+Delete</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="ValuteCompute" class="article div">Валютные счисления</div>
+                                <div class="article"><img src="images/screen6.jpg" alt=""/></div>
+                                <p class="absaz">Этот инструмент поможет с переводами многих валют. Благодаря парсингу страницы Центрального банка, вам не надо искать последний курс нужных вам валют, это предусмотрено в программе. Чтобы задействовать работу инструмента кликните "Обновить" или нажать на пробел.</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод чисел</td>
+                                        <td>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод запятой</td>
+                                        <td>,</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удаление последнего символа</td>
+                                        <td>Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удаление всех символов</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Изменение категории первой текстовой области</td>
+                                        <td>↑/↓</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Изменение категории второй текстовой области</td>
+                                        <td>→/←</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="DateCompute" class="article div">Вычисление дат</div>
+                                <div class="article"><img src="images/screen15.jpg" alt=""/></div>
+                                <p class="absaz">Вычисление дат показывает разницу во временных промежутках между задаваемыми датами.</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">для первой даты просто клавиша, для второй - с Alt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавить год</td>
+                                        <td>Y</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Убавить год</td>
+                                        <td>H</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавить месяц</td>
+                                        <td>T</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Убавить месяц</td>
+                                        <td>G</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Добавить день</td>
+                                        <td>R</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Убавить день</td>
+                                        <td>F</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Поставить время на сегодня</td>
+                                        <td>Space</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="EquationABC" class="article div">Квадратное уравнение</div>
+                                <div class="article"><img src="images/screen9.jpg" alt=""/></div>
+                                <p class="absaz">Квадратное уравнение позволит получить развернутый ответ об квадратном уравнении, который ранее ввели в виде запроса. </p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Вводе чисел</td>
+                                        <td>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод запятой</td>
+                                        <td>,</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод операции</td>
+                                        <td>+, -</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод определенного числа (a, b, c)</td>
+                                        <td>A, B, C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Отправить запрос</td>
+                                        <td>Enter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить запрос</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="ConverterDigits" class="article div">Конвертер чисел</div>
+                                <div class="article"><img src="images/screen10.jpg" alt=""></div>
+                                <p class="absaz">Конвертер чисел поможет перевести знакомые нам римские числа в общепонятные арабские и наоборот.</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод чисел (римских, арабских)</td>
+                                        <td>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, I, V, X, L, C, D, M</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Отправить запрос</td>
+                                        <td>Enter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить последний символ</td>
+                                        <td>Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить весь запрос</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="SystemMeasure" class="article div">Система измерений</div>
+                                <div class="article">
+                                    <img src="images/screen4.jpg" style="margin: 0 auto" alt=""/>
+                                </div>
+                                <p class="absaz">
+                                    Система измерений - инструмент, позволяющий пользователю переводить с одних величин в другие относительно их категорий (скорость, время, температура и т.д).
+                                </p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод чисел</td>
+                                        <td>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод запятой</td>
+                                        <td>,</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удаление последнего символа</td>
+                                        <td>Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удаление всех символов</td>
+                                        <td>Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Изменение категории</td>
+                                        <td>Page Up/ Down</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Изменение категории первой текстовой области</td>
+                                        <td>↑/↓</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Изменение категории второй текстовой области</td>
+                                        <td>→/←</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="MathScript" class='article div'>MathScript</div>
+                                <div class="article"><img src="images/screen3.jpg"/></div>
+                                <p class="absaz">MathScript - говорилось ранее, это условное средство для написания собственных, более сложных запросов. Его можно, грубо говоря, назвать языком программирования, поскольку он способен присваивать переменные, выполнять операции, работать с функциями и прочее(За исключением идет его неспособность работать с инструкциями и ООП). Так, к примеру из иллюстрации, продемонстрирован код, выполняющий вывод значений черз команду print.</p>
+                                <p class="absaz">
+                                    Кроме того, в программе предусмотрена работа с файлами, в частности формата '.txt'. Под тектовой областью есть кнопки для всевозможных операций с ними. При возможности можно непременно перетаскивать файлы в программу.
+                                </p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Открыть файл</td>
+                                        <td>Control+O</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сохранить файл</td>
+                                        <td>Control+S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сохранить как</td>
+                                        <td>Control+Shift+S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Закрыть файл</td>
+                                        <td>Control+E</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Скопировать выделенный текст</td>
+                                        <td>Control+C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Вставить текст</td>
+                                        <td>Control+V</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить весь текст</td>
+                                        <td>Control+Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Обработать запрос</td>
+                                        <td>Control+Enter</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="WindowConstant" class="article div">Окно констант</div>
+                                <div class="article"><img src="images/screen12.jpg" alt=""/></div>
+                                <p class="absaz">Окно констант - это дополнительное окно, которое позволяет вам, собственно ручно, работать над переменными в приложении, использовать их впоследствии для вычислений. К сожалению, переменные нельзя использовать в Вычислениях дат и MathScript.</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Создать переменную</td>
+                                        <td>Shift+Enter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить переменную</td>
+                                        <td>Shift+Delete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Выбрать/Убрать переменную, как активную</td>
+                                        <td>Shift+Home</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Изменить параметры переменной</td>
+                                        <td>Shift+End</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Переключение между переменными</td>
+                                        <td>Shift+(↑/↓)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить последний символ в параметре переменной</td>
+                                        <td>Shift+Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ввод символов</td>
+                                        <td>Shift+(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, +, -, ',')</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Применить переменную</td>
+                                        <td>Shift+Space</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="PanelLogBook" class="article div">Журнал событий</div>
+                                <div class="article"><img src="images/screen13.jpg" alt=""/></div>
+                                <p class="absaz">Журнал событий сохраняет то, что вы ранее выполняли с инструментами. Тем самым это поможет не упустить важные вычисления и не проделывать их заново. Как и со случаем с 'Окном констант', Журнал событий не сохраняет в инструментах : Система измерений, Валютные счисления, Вычисление дат.</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Переключение между событиями</td>
+                                        <td>Shift+(↑/↓)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Удалить событие</td>
+                                        <td>Shift+Delete</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="SettingsPage" class="article div">Настройки</div>
+                                <div class="article"><img src="images/screen14.jpg"/></div>
+                                <p class="absaz">Настройки, пожалуй, будут последним элементом, о котором будет идти речь. Этот инструмент позволяет вам изменить общий вид программы по цвету, регулировать появление подсказок и сохранение операций пользователя.</p>
+                                <table class="table">
+                                    <tr>
+                                        <th>Действие</th>
+                                        <th>Клавиш(а/и)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Увеличить значение 1-го ползунка</td>
+                                        <td>R</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Уменьшить значение 1-го ползунка</td>
+                                        <td>F</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Увеличить значение 2-го ползунка</td>
+                                        <td>T</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Уменьшить значение 2-го ползунка</td>
+                                        <td>G</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Увеличить значение 3-го ползунка</td>
+                                        <td>Y</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Уменьшить значение 3-го ползунка</td>
+                                        <td>H</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Включить/отключить подсказки</td>
+                                        <td>S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Включить/отключить сохранение событий</td>
+                                        <td>Alt+S</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Настройки по умолчанию</td>
+                                        <td>D</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Отмена изменений</td>
+                                        <td>Backspace</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Применить изменения</td>
+                                        <td>Enter</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Content-div">
+                                <div id="Listing" class="article div">Конечный лист</div>
+                                <p style="margin-bottom: 200px;" class="absaz">На этом можно и заканчивать обзор данной программы. Хочется надеятся, что сам проект и его концепция вам понравились, а также, что такой проект и его аналоги будут развиваться и дополняться новыми возможностями.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sidebar">
+                        <div id="sidebar-content">
+                            <div id="header-list">Оглавление</div>
+                            <ul id="items-sidebar">
+                                <li onclick="position('AboutProject');">О проекте</li>
+                                <li onclick="position('StructProject');">Структура программы</li>
+                                <li onclick="position('SimpleCalculator');">Обычный калькулятор</li>
+                                <li onclick="position('EngineerCalculator');">Инженерный калькулятор</li>
+                                <li onclick="position('NumberSystem');">Система счислений</li>
+                                <li onclick="position('ComputeNumSystem');">Вычисление СС</li>
+                                <li onclick="position('ValuteCompute');">Валютные счисления</li>
+                                <li onclick="position('DateCompute');">Вычисление дат</li>
+                                <li onclick="position('EquationABC');">Уравнение квадратное</li>
+                                <li onclick="position('ConverterDigits');">Конвертер чисел</li>
+                                <li onclick="position('SystemMeasure');">Система измерений</li>
+                                <li onclick="position('MathScript');">MathScript</li>
+                                <li onclick="position('WindowConstant');">Окно констант</li>
+                                <li onclick="position('PanelLogBook');">Журнал событий</li>
+                                <li onclick="position('SettingsPage');">Настройки</li>
+                                <li onclick="position('Listing');">Конечный лист</li>
+                            </ul>
+                            <img onclick="position();" id="image2" src="images/symbol.png" alt=""/>
+                            <img id="image1" src="images/symbol.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

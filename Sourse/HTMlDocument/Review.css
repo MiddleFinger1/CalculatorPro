@@ -1,0 +1,145 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    background-color: #2B2B2B;
+    display: inline-block;
+}
+::selection{
+    color: #1E1E1E;
+    background-color: #BDBCC7;
+}
+*{
+    cursor: default;
+}
+#wrapper{
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #BDBCC7;
+}
+#header{
+    height: 80px;
+    margin: 0 auto;
+}
+#header-content{
+    height: 100%;
+    max-width: 1920px;
+    min-width: 720px;
+    margin: 0 auto;
+    display: block;
+    background-color: #315B49;
+}
+#IdIcon{
+    margin: 5px 5px;
+    vertical-align: middle;
+}
+#title-header{
+    vertical-align: middle;
+    font-size: 40px;
+}
+#body{
+    width: 100%;
+    height: auto;
+}
+#body-content{
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    min-width: 720px;
+
+}
+#content{
+    height: 100%;
+    width: 75%;
+    float: left;
+    background:#1E1E1E url("images/stars.png");
+}
+#content-content{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+.table{
+    margin: 0 auto;
+    padding: 0;
+    width: 500px;
+}
+.table th{
+    color: #d3d7da;
+    font-size: 20px;
+    background-color: #315B49;
+    padding: 5px;
+}
+.table td{
+    color: #BDBCC7;
+    font-size: 16px;
+    background-color: #676b6e;
+    padding: 5px;
+}
+#sidebar{
+    height: 100%;
+    margin: 0 auto;
+    width: 25%;
+    float: right;
+    background-color: #2d4fa0;
+}
+#sidebar-content{
+    position: absolute;
+    width: 220px;
+    top: 100px;
+}
+#header-list{
+    width: 90%;
+    margin: 0 0 10px 30px;
+    border-bottom: 2px solid #d3d7da;
+    color: #d3d7da;
+    font-size: 30px;
+    text-align: center;
+}
+#items-sidebar{
+    width: 95%;
+    list-style: none;
+    font-size: 17px;
+    margin: 0 auto;
+}
+#items-sidebar li:hover{
+    text-decoration: underline;
+    padding: 2px;
+    color: #d3d7da;
+}
+#image1{
+    margin: 0 0 0 -40px;
+    width: 120%;
+}
+#image2{
+    margin: 10px 0 0 100px;
+    width: 50%;
+}
+#footer{
+    clear: both;
+    height: 150px;
+}
+#footer-content{
+    height: 100%;
+    max-width: 1920px;
+    min-width: 720px;
+    margin: 0 auto;
+    background-color: #B6C3B2;
+}
+.article{
+    color: #977C6E;
+    font-size: 30px;
+    text-align: center;
+}
+.div{
+    border-bottom: 3px solid #977C6E;
+    margin: 20px 0 20px 0;
+}
+.absaz{
+    text-indent: 80px;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 95%;
+}
